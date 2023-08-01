@@ -13,6 +13,8 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false"
   },
   "dependencies": {
+    "@formkit/themes": "^0.17.5",
+    "@formkit/vue": "^0.17.5",
     "axios": "^1.4.0",
     "luxon": "^3.3.0",
     "pinia": "^2.1.4",
@@ -40,6 +42,7 @@
     "eslint-plugin-vue": "^9.11.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.8.8",
+    "sass": "^1.64.1",
     "typescript": "~5.0.4",
     "vite": "^4.3.9",
     "vue-cli-plugin-i18n": "~2.3.2",

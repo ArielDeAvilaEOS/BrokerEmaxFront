@@ -1,12 +1,13 @@
 const authRoutes = {
   path: '/auth',
   name: 'auth',
+  component: () => import('@/layouts/AuthLayout.vue'),
   meta: {
     requiresAuth: false
   },
   children: [
     {
-      path: 'login',
+      path: '',
       name: 'login',
       component: () => import('@/modules/auth/views/login/Index.vue')
     },
@@ -14,11 +15,6 @@ const authRoutes = {
       path: 'register',
       name: 'register',
       component: () => import('@/modules/auth/views/register/Index.vue')
-    },
-    {
-      path: 'forgot-password',
-      name: 'forgot-password',
-      component: () => import('@/modules/auth/views/forgot-password/Index.vue')
     },
     {
       path: 'recover-password',

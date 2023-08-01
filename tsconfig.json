@@ -11,7 +11,9 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    "allowJs": true,
+    "lib": ["es2017", "dom"]
   },
   "include": [
     "src/**/*.ts",

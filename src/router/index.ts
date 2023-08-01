@@ -1,6 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 //importation
+import complete_accountRoutes from '@/modules/complete_account/router'
+import verify_accountRoutes from '@/modules/verify_account/router'
+import promotionRoutes from '@/modules/promotion/router'
+import accountsRoutes from '@/modules/accounts/router'
+import ebankRoutes from '@/modules/ebank/router'
+import dashboardRoutes from '@/modules/dashboard/router'
 import authRoutes from '@/modules/auth/router'
 
 const router = createRouter({
@@ -8,19 +13,12 @@ const router = createRouter({
   routes: [
     //module
     authRoutes,
-    {
-      path: '/',
-      name: 'home',
-      component: HomeView
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
-    }
+    complete_accountRoutes,
+    verify_accountRoutes,
+    promotionRoutes,
+    accountsRoutes,
+    ebankRoutes,
+    dashboardRoutes
   ]
 })
 

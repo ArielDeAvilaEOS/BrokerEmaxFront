@@ -1,0 +1,10 @@
+
+@use 'vuetify' with (
+  $utilities: false,
+  $color-pack: false,
+);
+@import '@/assets/scss/typography.scss';
+@import '@/assets/scss/vuetify.scss';
+
+
+

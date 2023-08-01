@@ -1,12 +1,14 @@
-import './assets/main.css'
+import './assets/main.scss'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 
+
 import axios from '@/plugins/Axios'
 import App from './App.vue'
 import router from './router'
+
 
 //PLUGINS
 import vuetify from './plugins/Vuetify'

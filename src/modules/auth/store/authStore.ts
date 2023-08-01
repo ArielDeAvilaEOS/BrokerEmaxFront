@@ -3,7 +3,7 @@ import { makeRequest } from '../helpers'
 import type { loginRequest, loginResponseType } from '../types/storeTypes'
 // project imports
 
-export const useAuthStore = defineStore({
+export const useauthStore = defineStore({
   id: 'auth',
   state: (): any => ({
     bearer: null
@@ -19,6 +19,6 @@ export const useAuthStore = defineStore({
         return error
       }
     }
-  }
+  },
   //persist: true // SOLO PARA PERSISTIR
 })

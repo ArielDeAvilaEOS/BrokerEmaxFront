@@ -3,7 +3,9 @@
     <HeaderApp />
     <div class="app__container">
       <MenuApp />
-      <router-view></router-view>
+      <div class="app__content">
+        <router-view></router-view>
+      </div>
     </div>
   </div>
 </template>
@@ -17,6 +19,10 @@
   height: 100%;
   &__container {
     display: flex;
+  }
+  &__content {
+    padding: 2rem 1.5rem;
+    width: 100%;
   }
 }
 </style>

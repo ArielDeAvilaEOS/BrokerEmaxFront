@@ -1,6 +1,5 @@
 const accountsRoutes = {
   path: '/accounts',
-  name: 'accounts',
   component: () => import('@/layouts/AppLayout.vue'),
   meta: {
     requiresAuth: false

@@ -1,5 +1,4 @@
 <template>
-//HTML CONTENT
+  <h1>hopla</h1>
 </template>
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>

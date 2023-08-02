@@ -6,9 +6,9 @@ import axios from 'axios'
 import { useErrorsStore } from '@/stores/errors'
 import router from '@/router'
 
-let bearer = localStorage.getItem('auth')
+const bearer = localStorage.getItem('auth')
 if (bearer) {
-  let auth = JSON.parse(bearer)
+  const auth = JSON.parse(bearer)
   axios.defaults.headers.common.Authorization = 'Bearer ' + auth.bearer
 }
 
@@ -26,7 +26,7 @@ axios.interceptors.response.use(
       router.push({ name: 'Login' })
     }
 
-    let errorsArray = []
+    const errorsArray = []
     if (error.request.status != 401 && error.request.status != 404) {
       if (error.response.data.message) {
         errorsArray.push(error.response.data.message)

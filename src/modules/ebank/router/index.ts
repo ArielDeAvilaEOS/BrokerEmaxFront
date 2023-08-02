@@ -1,6 +1,5 @@
 const ebankRoutes = {
   path: '/ebank',
-  name: 'ebank',
   component: () => import('@/layouts/AppLayout.vue'),
   meta: {
     requiresAuth: false

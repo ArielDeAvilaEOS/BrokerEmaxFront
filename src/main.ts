@@ -14,6 +14,7 @@ import router from './router'
 import vuetify from './plugins/Vuetify'
 import globalComponents from './plugins/GlobalComponents'
 import './plugins/Luxon'
+import VueApexCharts from "vue3-apexcharts"
 
 const pinia = createPinia()
 pinia.use(piniaPluginPersistedstate)
@@ -25,6 +26,7 @@ app.config.globalProperties.mode = 'prod'
 //PLUGINS
 app.use(globalComponents)
 app.use(vuetify)
+app.use(VueApexCharts)
 
 //PROJECT BASE
 app.use(pinia)
